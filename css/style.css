@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+ul,
+ol{
+    list-style-type: none;
+}
+
+/*  ------ Componentes -------- */
+/*  ------ header -------- */
+.header{
+    background-color:#0EABA8;
+     /* dodgerblue; */
+    padding:20px;
+    display: flex;
+    justify-content:start;
+    /* center;  */
+    /* space-between; */
+    flex-direction: row;
+    color:black;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-list{
+    display: flex;
+    gap: 20px;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+/* .h1{
+    align-content: center;
+} */
+
+ .h2{
+    align-content: center;
+} 
+
+/*  ------  Index  -------- */
+/*  ------ Portada -------- */
+.portada-index{
+    /* background-color: cadetblue; */
+    height: 94vh;
+    background-image: url("../img/portada_principal.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-texto{
+    background-color:#0EABA8;
+    /* rgba(95, 158, 160, 0.493); */
+    padding: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+}  
+
+.portada-btn{
+    background-color:#0EABA8;
+    /* rgba(95, 158, 160, 0.493); */
+    padding: 15px;
+    color: black;
+    border:black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+}  
+.portada-h2{
+    font-size: 1.8rem;
+}
+
+.portada-h3{
+    font-size: 1.4rem;
+}
+
+.btn{
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    border:2px solid white;
+    color: black;
+    border-radius: 20px;    
+}
+
+.card{
+    width: 160px;
+    height: 160px;
+    /* border: solid 3px black; */
+    font-size: 1.8rem;
+    text-align: center;
+    /* flex: flex-col; */
+    flex: justify-center;
+    /* gap:-10px; */
+    /* max-width: 1280px; */
+    justify-content: flex-start;    
+}
+
+.flex-container1{
+    display: flex;
+    /* flex-flow: row wrap;   */
+    flex-direction: column;
+    height: flex; 
+    justify-content: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;  
+    height: flex; 
+    justify-content: space-around;
+}

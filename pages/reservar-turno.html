@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="bootstrap/css/datepicker/bootstrap-datepicker3.css" rel="stylesheet">
+    <script src="bootstrap/js/datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="bootstrap/js/datepicker/bootstrap-datepicker.es.min.js"></script>
+
+    <title> Centro Medico AVG </title>
+</head>
+
+<body>
+    <header class="header">        
+        <nav class="nav-list">
+            <ul class="nav-list">
+                <li>
+                    <a href="./servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="./sedes.html">Sedes</a>
+                </li>
+                <li>
+                    <a href="./buscar.html">Buscar</a>
+                </li>
+                <li>
+                    <a href="./reservar-turno.html">Reservá tu turno</a>
+                </li>                                                
+            </ul>
+        </nav>
+        <h1 class="h1">Centro Medico AVG</h1>
+        <!-- <hr> -->
+    </header>
+
+    <main>
+        <section class="flex-container1">
+            <h2>Turnos Online</h2>
+            <section class="flex-container">
+                <!-- <form class="flex-container"> -->
+                    <!-- <div> -->
+                    <!-- <div class="col-lg-12"> -->
+                    <div>
+                        <div class="row">
+                            <label>Cobertura</label>
+                            <div>
+                                <select id="cod_os" name="cod_os" class="selectpicker float-left ancho-max"
+                                    data-live-search="true">
+                                    <option value="">Seleccionar</option>
+                                    <option value="32">OSMECON</option>
+                                    <option value="1" selected>OSDE </option>
+                                    <option value="2">OMINT</option>
+                                    <option value="3">OSDIPP</option>
+                                    <option value="4">COLEGIO DE ESCRIBANOS PROV.</option>
+                                    <option value="27">ATENCION PARTICULAR</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label>Plan</label>
+                            <div>
+                                <select id="cod_plan" name="cod_plan">
+                                    <option value="">Seleccionar</option>
+                                    <option value="210" selected>210</option>
+                                    <option value="310">310</option>
+                                    <option value="410">410</option>
+                                    <option value="450">450</option>
+                                    <option value="510">510</option>
+                                    <option value="6 030">6 030</option>
+                                    <option value="8 360">8 360</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label>Sede</label>
+                            <div>
+                                <select id="id_base" name="id_base">
+                                    <option value="">Seleccionar</option>
+                                    <option value="BN">BARRIO NORTE</option>
+                                    <option value="BEL">BELGRANO</option>
+                                    <option value="LMZ">LOMAS DE ZAMORA</option>
+                                    <option value="ND">CANNING</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label>Especialidad</label>
+                            <div>
+                                <select id="cod_espe" name="cod_espe">
+                                    <option value="">Seleccionar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label>Profesional</label>
+                            <div>
+                                <select id="cod_profe" name="cod_profe">
+                                    <option value="">Seleccionar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <a href="#">
+                                    <span> Ver horario de Atención</span>
+                                </a>
+                                </br>
+                                <span id="horario"></span>
+                            </div>
+                        </div>
+                    </div><!-- fin 10 -->
+
+                    <div>
+                        <div>
+                            <div class="row">
+                                <div id="datepicker">Aca irá un calendario</div>
+                                <input type="hidden" id="my_hidden_input">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <h3>ATENCIÓN: Por favor le pedimos que asista puntual.</h3>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div id="obser_profe" class="form-group"
+                                    style="font-size: 24px;font-family: Helvetica, Arial, sans-serif; font-weight: 500;line-height: 1.2; color: red !important;">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- fin 12 -->
+                    <!-- </div> -->
+                <!-- </form> -->
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
