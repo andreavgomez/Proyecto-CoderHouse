@@ -12,89 +12,92 @@
 
 <body>
     <header class="header">        
-        <nav class="nav-list">
-            <ul class="nav-list">
-                <li>
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li class="list-item">
                     <a href="./servicios.html">Servicios</a>
                 </li>
-                <li>
+                <li class="list-item">
                     <a href="./sedes.html">Sedes</a>
                 </li>
-                <li>
+                <li class="list-item">
                     <a href="./buscar.html">Buscar</a>
                 </li>
-                <li>
+                <li class="list-item">
                     <a href="./reservar-turno.html">Reservá tu turno</a>
                 </li>                                                
             </ul>
         </nav>
-        <h1 class="h1">Centro Medico AVG</h1>
-        <!-- <hr> -->
+        <div class="header-title">
+            <h1 class="h1">Centro Medico AVG</h1>
+        </div>
+        <form action="" class="header-form">
+            <input type="search" name="search" placeholder="Buscar...">
+            <input type="submit" value="Enviar">
+        </form>
     </header>
 
     <main>
-        <section class="flex-container1">
+        <section class="galeria">
+            <h2 class="galeria-title">SERVICIOS</h2>
+
+            <section class="contenedor-galeria">
+                <div class="card">
+                    <img class="card-img" src="../img/traumatologia.png">
+                    <p>Traumatología</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="../img/diagnostico-por-imagenes.png">
+                    <p>Diagnóstico por imágenes</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="../img/nutricion.png">
+                    <p>Nutrición</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="../img/kinesiologia.png">
+                    <p>Kinesiología</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="../img/cardiologia.png">
+                    <p>Cardiología</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="../img/otros-servicios.png">
+                    <p>Otros servicios</p>
+                </div>
+            </section>
+        </section>        
+        <!-- <section class="flex-container1">
             <h2>SERVICIOS</h2>
             <section class="flex-container">
 
                 <div class="card">
-                    <img src="../img/traumatologia.png">
+                    <img class="card-img" src="../img/traumatologia.png">
                     <p>Traumatología</p>
                 </div>
                 <div class="card">
-                    <!-- <div> -->
-                    <img src="../img/diagnostico-por-imagenes.png">
+                    <img class="card-img" src="../img/diagnostico-por-imagenes.png">
                     <p>Diagnóstico por imágenes</p>
                 </div>
-                <!-- <div>
-                    <span>
-                        Diagnóstico por imágenes
-                    </span>
-                </div> -->
-                <!-- </div> -->
                 <div class="card">
-                    <!-- <div> -->
-                    <img src="../img/nutricion.png">
+                    <img class="card-img" src="../img/nutricion.png">
                     <p>Nutrición</p>
                 </div>
-                <!-- <div>
-                    <span>Nutrición</span>
-                </div> -->
-                <!-- </div>  -->
                 <div class="card">
-                    <!-- <div> -->
-                    <img src="../img/kinesiologia.png">
+                    <img class="card-img" src="../img/kinesiologia.png">
                     <p>Kinesiología</p>
                 </div>
-                <!-- <div>
-                    <span>
-                        Kinesiología</span>
-                </div>
-            </div> -->
                 <div class="card">
-                    <!-- <div> -->
-                    <img src="../img/cardiologia.png">
+                    <img class="card-img" src="../img/cardiologia.png">
                     <p>Cardiología</p>
-                    <!-- </div>
-                <div>
-                    <span>
-                        Apto físico
-                    </span>
-                </div> -->
                 </div>
                 <div class="card">
-                    <!-- <div> -->
-                    <img src="../img/otros-servicios.png">
+                    <img class="card-img" src="../img/otros-servicios.png">
                     <p>Otros servicios</p>
-                    <!-- </div>
-                <div>
-                    <span>
-                        Otros servicios
-                    </span>
-                </div> -->
                 </div>
             </section>
-        </section>
+        </section> -->
     </main>
 
     <!-- <footer class="bg-artroGray-default flex justify-center items-center relative py-4">

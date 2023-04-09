@@ -11,7 +11,8 @@ a{
 
 ul,
 ol{
-    list-style-type: none;
+    /* list-style-type: none; */
+    list-style: none;
 }
 
 /*  ------ Componentes -------- */
@@ -19,23 +20,50 @@ ol{
 .header{
     background-color:#0EABA8;
      /* dodgerblue; */
-    padding:20px;
-    display: flex;
-    justify-content:start;
-    /* center;  */
-    /* space-between; */
-    flex-direction: row;
     color:black;
+    padding:20px;
+    /* display: flex;
+    justify-content:start;
+    flex-direction: row;    
     align-items: center;
-    align-content: center;
+    align-content: center; */
 }
-
-.nav-list{
+/* 
+.header-list {
     display: flex;
     gap: 20px;
     flex-flow: column wrap;
     justify-content: flex-start;
 }
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.header-form {
+    display: none;
+}
+
+.header-title h1 {
+    text-align: center;
+}
+
+.list-item {
+    text-align: center;
+}
+
+/* .header-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* .header-form {
+    display: none;
+} */
 
 /* .h1{
     align-content: center;
@@ -44,6 +72,61 @@ ol{
  .h2{
     align-content: center;
 } 
+
+
+/* MEDIAQUERIE - HEADER - TABLET - GRID */
+@media (min-width: 768px) and (max-width: 1999px)  {
+    .header {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 10vh 5vh;
+    }
+  
+    .header-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .header-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .header-nav {
+      grid-column: span 2;
+      display: flex;
+      align-items: start;
+      justify-content: start;
+    }
+  
+    .header-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+  }  
+
+/* MEDIAQUERIE - HEADER -DESKTOP */
+@media (min-width: 1200px) {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .header-form {
+      display: block;
+      order: 1;
+    }
+  
+    .header-list {
+      display: flex;
+      gap: 20px;
+    }
+  }
 
 /*  ------  Index  -------- */
 /*  ------ Portada -------- */
@@ -99,6 +182,7 @@ ol{
     border-radius: 20px;    
 }
 
+/* ======= GRILLA SERVICIOS ========= */
 .card{
     width: 160px;
     height: 160px;
@@ -109,7 +193,9 @@ ol{
     flex: justify-center;
     /* gap:-10px; */
     /* max-width: 1280px; */
-    justify-content: flex-start;    
+    /* justify-content: flex-start;     */
+    justify-content: center;
+    align-content: center;
 }
 
 .flex-container1{
@@ -122,7 +208,62 @@ ol{
 
 .flex-container{
     display: flex;
-    flex-flow: row wrap;  
+    /* flex-flow: row wrap;  
     height: flex; 
-    justify-content: space-around;
+    justify-content: space-around; */
+
+    flex-direction: column;
+    gap: 20px;
 }
+
+.card-img {
+    width: 100PX;
+    height: 100px;
+}
+
+/* ======= GRILLA GALERIA ========= */
+
+.galeria {
+    padding: 15px;
+  }
+  
+  .galeria-title {
+    text-align: center;
+  }
+  
+  .contenedor-galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  /* GRID - GALERIA - TABLET */
+  @media (min-width: 768px) {
+    .contenedor-galeria {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 25vh);
+    }
+  
+    .contenedor-galeria img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .img-destacada {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .contenedor-galeria {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 30vh);
+    }
+  }
+  
