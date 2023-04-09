@@ -74,6 +74,13 @@ ol{
 } 
 
 
+@media (max-width: 767px) {
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+  
 /* MEDIAQUERIE - HEADER - TABLET - GRID */
 @media (min-width: 768px) and (max-width: 1999px)  {
     .header {
@@ -190,7 +197,9 @@ ol{
     font-size: 1.8rem;
     text-align: center;
     /* flex: flex-col; */
-    flex: justify-center;
+    display: flex;
+    flex-direction: column;
+    /* flex: justify-center; */
     /* gap:-10px; */
     /* max-width: 1280px; */
     /* justify-content: flex-start;     */
@@ -234,8 +243,9 @@ ol{
   .contenedor-galeria {
     display: flex;
     flex-direction: column;
+    flex-wrap:wrap;
     gap: 20px;
-    padding: 10px;
+    padding: 20px;
     justify-content: center;
     align-content: center;
   }
@@ -244,8 +254,14 @@ ol{
   @media (min-width: 768px) {
     .contenedor-galeria {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(4, 25vh);
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 40vh);
+      gap: 20px;
+      padding: 20px;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
     }
   
     .contenedor-galeria img {
@@ -253,17 +269,74 @@ ol{
       height: 100%;
       object-fit: cover;
     }
-  
-    .img-destacada {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
+
   }
   
   @media (min-width: 1200px) {
     .contenedor-galeria {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 30vh);
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(1, 30vh);
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      align-content: center;      
+    }
+  }
+
+  /* ======== FOOTER ========== */
+
+footer {
+    background-color: #0EABA8;
+    color: black;
+    padding: 15px;
+  }
+  
+  .footer-redes,
+  .footer-contacto,
+  .footer-newsletter {
+    font-size: 1rem;
+    padding: 1em;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    text-align: center;
+  }
+
+  .footer-redes-items {
+    font-size: 1rem;
+    padding: 1em;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    text-align: center;
+  }
+  
+  .contenedor-footer {
+    width: 80%;
+    border-bottom: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  footer h4 {
+    font-size: 1.5rem;
+  }
+  
+  .copy-footer {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  @media (min-width: 600px) {
+    .contenedor-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
   
