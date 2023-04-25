@@ -19,18 +19,6 @@ ol {
 /*  ------------------------ */
 /*  ------ Componentes -------- */
 /*  ------ header -------- */
-.header {
-  background-color: #0EABA8;
-  /* dodgerblue; */
-  color: black;
-  padding: 20px;
-  /* display: flex;
-      justify-content:start;
-      flex-direction: row;    
-      align-items: center;
-      align-content: center; */
-}
-
 /* 
     .header-list {
         display: flex;
@@ -44,17 +32,13 @@ ol {
         justify-content: center;
         align-items: center;
     } */
-.header-title h1 {
-  text-align: center;
-}
-
 /* ======== General ========= */
 .header {
   background-color: #0EABA8;
   color: black;
   padding: 20px;
 }
-.header .header-title h1 {
+.header .header-title:h1 {
   text-align: center;
 }
 .header .h2 {
@@ -78,9 +62,6 @@ ol {
 .header .header-nav .header-list .list-item {
   text-align: center;
 }
-.header .header-nav .header-list .list-item:a:active {
-  color: blue;
-}
 .header .header-nav .header-list .list-item a {
   text-decoration: none;
   color: black;
@@ -88,8 +69,15 @@ ol {
 .header .header-nav .header-list .list-item a:hover {
   color: blue;
 }
+.header .header-nav .header-list .list-item a:a:active {
+  color: blueviolet;
+}
 
 .header-title h1 {
+  text-align: center;
+}
+
+h1 {
   text-align: center;
 }
 
