@@ -1,0 +1,56 @@
+/* ======== FOOTER ========== */
+
+footer {
+    background-color: $color-primario;
+    color: black;
+    padding: 15px;
+  }
+  
+  .footer-redes,
+  .footer-contacto,
+  .footer-newsletter {
+    font-size: 1rem;
+    padding: 1em;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    text-align: center;
+  }
+  
+  .footer-redes-items {
+    font-size: 1rem;
+    padding: 1em;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    text-align: center;
+  }
+  
+  .contenedor-footer {
+    width: 80%;
+    border-bottom: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  footer h4 {
+    font-size: 1.5rem;
+  }
+  
+  .copy-footer {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  @media (min-width: 600px) {
+    .contenedor-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }

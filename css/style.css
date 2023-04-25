@@ -15,6 +15,8 @@ ol {
   list-style: none;
 }
 
+/*  ------ Variabes -------- */
+/*  ------------------------ */
 /*  ------ Componentes -------- */
 /*  ------ header -------- */
 .header {
@@ -30,43 +32,65 @@ ol {
 }
 
 /* 
-  .header-list {
-      display: flex;
-      gap: 20px;
-      flex-flow: column wrap;
-      justify-content: flex-start;
-  }
+    .header-list {
+        display: flex;
+        gap: 20px;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+    }
 
-  .header-title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  } */
-.header-form {
-  display: none;
-}
-
+    .header-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
 .header-title h1 {
   text-align: center;
 }
 
-.list-item {
+/* ======== General ========= */
+.header {
+  background-color: #0EABA8;
+  color: black;
+  padding: 20px;
+}
+.header .header-title h1 {
   text-align: center;
 }
-
-/* .header-form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  } */
-/* .header-form {
-      display: none;
-  } */
-/* .h1{
-      align-content: center;
-  } */
-.h2 {
+.header .h2 {
   align-content: center;
+}
+.header .header-form {
+  display: none;
+}
+.header .header-nav {
+  grid-column: span 2;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.header .header-nav .header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.header .header-nav .header-list .list-item {
+  text-align: center;
+}
+.header .header-nav .header-list .list-item:a:active {
+  color: blue;
+}
+.header .header-nav .header-list .list-item a {
+  text-decoration: none;
+  color: black;
+}
+.header .header-nav .header-list .list-item a:hover {
+  color: blue;
+}
+
+.header-title h1 {
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -107,6 +131,57 @@ ol {
   .header-list {
     display: flex;
     gap: 20px;
+  }
+}
+/* ======== FOOTER ========== */
+footer {
+  background-color: #0EABA8;
+  color: black;
+  padding: 15px;
+}
+
+.footer-redes,
+.footer-contacto,
+.footer-newsletter {
+  font-size: 1rem;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-redes-items {
+  font-size: 1rem;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contenedor-footer {
+  width: 80%;
+  border-bottom: 2px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer h4 {
+  font-size: 1.5rem;
+}
+
+.copy-footer {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 /*  ------  Index  -------- */
@@ -249,98 +324,6 @@ ol {
     justify-content: center;
     align-content: center;
   }
-}
-/* ======== General ========= */
-.header {
-  background-color: #0EABA8;
-  /* dodgerblue; */
-  padding: 20px;
-  /* display: flex;
-        justify-content:start;
-        flex-direction: row;    
-        align-items: center;
-        align-content: center; */
-}
-.header .header-nav {
-  grid-column: span 2;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-}
-.header .header-nav .header-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-.header .header-nav .header-list .list-item {
-  text-align: center;
-}
-.header .header-nav .header-list .list-item a {
-  text-decoration: none;
-  color: black;
-}
-.header .header-nav .header-list .list-item a:hover {
-  color: blue;
-}
-
-/* ======== FOOTER ========== */
-footer {
-  background-color: #0EABA8;
-  color: black;
-  padding: 15px;
-}
-
-.footer-redes,
-.footer-contacto,
-.footer-newsletter {
-  font-size: 1rem;
-  padding: 1em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-}
-
-.footer-redes-items {
-  font-size: 1rem;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.contenedor-footer {
-  width: 80%;
-  border-bottom: 2px solid white;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-footer h4 {
-  font-size: 1.5rem;
-}
-
-.copy-footer {
-  display: block;
-  text-align: center;
-  padding: 10px;
-}
-
-@media (min-width: 600px) {
-  .contenedor-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-.list-item {
-  text-align: center;
-  color: red;
-}
-.list-item:a:active {
-  color: blue;
 }
 
 /*# sourceMappingURL=style.css.map */

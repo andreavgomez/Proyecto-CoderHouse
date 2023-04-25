@@ -1,0 +1,159 @@
+/*  ------ Componentes -------- */
+/*  ------ header -------- */
+.header {
+    background-color: $color-primario;
+    ;
+    /* dodgerblue; */
+    color: black;
+    padding: 20px;
+    // font-family: $fuente-principal;
+    /* display: flex;
+        justify-content:start;
+        flex-direction: row;    
+        align-items: center;
+        align-content: center; */
+}
+
+/* 
+    .header-list {
+        display: flex;
+        gap: 20px;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+    }
+    
+    .header-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+
+// .header-form {
+//     display: none;
+// }
+
+.header-title h1 {
+    text-align: center;
+}
+
+// .h2 {
+//     align-content: center;
+// }
+
+/* ======== General ========= */
+.header {
+    background-color: $color-primario;
+    color: black;
+    padding: 20px;
+
+    .header-title {
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .h2 {
+        align-content: center;
+    }
+
+    .header-form {
+        display: none;
+    }
+
+    .header-nav {
+        grid-column: span 2;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+
+        // ul
+        .header-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            // }
+            // li
+            .list-item {
+                text-align: center;
+
+                &:a:active {
+                    color: blue;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-title h1 {
+    text-align: center;
+}
+
+// veeerr
+// .list-item {
+//     text-align: center;
+//     color: red;
+
+//     &:a:active {
+//         color: blue;
+//     }
+// }
+
+//  
+@media (max-width: 767px) {
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/* MEDIAQUERIE - HEADER - TABLET - GRID */
+@media (min-width: 768px) and (max-width: 1999px) {
+    .header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10vh 5vh;
+    }
+
+    .header-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* MEDIAQUERIE - HEADER -DESKTOP */
+@media (min-width: 1200px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-form {
+        display: block;
+        order: 1;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 20px;
+    }
+}
