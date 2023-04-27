@@ -44,9 +44,6 @@ ol {
 .header .h2 {
   align-content: center;
 }
-.header .header-form {
-  display: none;
-}
 .header .header-nav {
   grid-column: span 2;
   display: flex;
@@ -148,11 +145,6 @@ ol {
   .header-list {
     display: flex;
     gap: 20px;
-  }
-  .header-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .header-hamb {
     display: none;

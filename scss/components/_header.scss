@@ -56,9 +56,9 @@
         align-content: center;
     }
 
-    .header-form {
-        display: none;
-    }
+    // .header-form {
+    //     display: none;
+    // }
 
     .header-nav {
         grid-column: span 2;
@@ -246,11 +246,11 @@
         gap: 20px;
     }
 
-    .header-form {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-    }    
+    // .header-form {
+    //      display: flex;
+    //      justify-content: center;
+    //      align-items: center;
+    // }    
 
     .header-hamb {
         display: none;
