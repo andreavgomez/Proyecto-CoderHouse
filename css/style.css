@@ -73,36 +73,65 @@ ol {
   color: blueviolet;
 }
 
-.header-title h1 {
-  text-align: center;
-}
-
-h1 {
-  text-align: center;
-}
-
 @media (max-width: 767px) {
   .header {
-    display: flex;
-    flex-direction: column-reverse;
+    display: none;
+  }
+  .header-hamb {
+    display: block;
+    background-color: #0EABA8;
+    color: black;
+    padding: 20px;
+  }
+  .header-hamb-title {
+    text-align: center;
+    background-color: #0EABA8;
+    color: black;
+  }
+  .header-hamb-nav {
+    background-color: #0EABA8;
+    color: black;
+  }
+  .header-hamb-nav .header-list .list-item a {
+    text-decoration: none;
+    color: black;
+  }
+  .header-hamb-nav .header-list .list-item a:hover {
+    color: blue;
+  }
+  .header-hamb-nav .header-list .list-item a:a:active {
+    color: blueviolet;
   }
 }
 /* MEDIAQUERIE - HEADER - TABLET - GRID */
 @media (min-width: 768px) and (max-width: 1999px) {
   .header {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10vh 5vh;
+    display: none;
   }
-  .header-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .header-hamb {
+    display: block;
+    background-color: #0EABA8;
+    color: black;
+    padding: 20px;
   }
-  .header-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .header-hamb-title {
+    text-align: center;
+    background-color: #0EABA8;
+    color: black;
+  }
+  .header-hamb-nav {
+    background-color: #0EABA8;
+    color: black;
+  }
+  .header-hamb-nav .header-list .list-item a {
+    text-decoration: none;
+    color: black;
+  }
+  .header-hamb-nav .header-list .list-item a:hover {
+    color: blue;
+  }
+  .header-hamb-nav .header-list .list-item a:a:active {
+    color: blueviolet;
   }
 }
 /* MEDIAQUERIE - HEADER -DESKTOP */
@@ -119,6 +148,14 @@ h1 {
   .header-list {
     display: flex;
     gap: 20px;
+  }
+  .header-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-hamb {
+    display: none;
   }
 }
 /* ======== FOOTER ========== */
@@ -285,6 +322,12 @@ footer h4 {
   align-content: center;
 }
 
+@media (max-width: 767px) {
+  .galeria {
+    padding: 15px;
+    height: 74rem;
+  }
+}
 /* GRID - GALERIA - TABLET */
 @media (min-width: 768px) {
   .contenedor-galeria {
@@ -303,6 +346,10 @@ footer h4 {
     height: 100%;
     object-fit: cover;
   }
+  .galeria {
+    padding: 15px;
+    height: 50rem;
+  }
 }
 @media (min-width: 1200px) {
   .contenedor-galeria {
@@ -312,6 +359,10 @@ footer h4 {
     align-items: center;
     justify-content: center;
     align-content: center;
+  }
+  .galeria {
+    padding: 15px;
+    height: 64vh;
   }
 }
 .flex-container1 {

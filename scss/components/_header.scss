@@ -101,42 +101,130 @@
 
 }
 
-.header-title h1 {
-    text-align: center;
-}
+// .header-title h1 {
+//     text-align: center;
+// }
 
-h1 {
-    text-align: center;
-}
+// h1 {
+//     text-align: center;
+// }
 
 // media queries - Header - Celu
 
 @media (max-width: 767px) {
     .header {
-        display: flex;
-        flex-direction: column-reverse;
+        display: none;
+ 
+        // display: flex;
+        // flex-direction: column-reverse;
     }
+        
+    .header-hamb {
+        display: block;
+        // flex-direction: column-reverse;
+        background-color: $color-primario;
+        color: black;
+        padding: 20px;                    
+        
+    }
+    .header-hamb-title {
+        text-align: center;
+        background-color: $color-primario;
+        color: black;
+
+    }   
+    .header-hamb-nav {
+        background-color: $color-primario;
+        color: black;   
+        
+        .header-list {
+            .list-item {
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        color: blue;
+                    }
+
+                    &:a:active {
+                        color: blueviolet;
+                    }
+    
+                }
+            }
+        }        
+
+    }
+
 }
+
 
 /* MEDIAQUERIE - HEADER - TABLET - GRID */
 @media (min-width: 768px) and (max-width: 1999px) {
     .header {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 10vh 5vh;
+        display: none;
+ 
+        // display: flex;
+        // flex-direction: column-reverse;
+    }
+        
+    .header-hamb {
+        display: block;
+        // flex-direction: column-reverse;
+        background-color: $color-primario;
+        color: black;
+        padding: 20px;                    
+        
+    }
+    .header-hamb-title {
+        text-align: center;
+        background-color: $color-primario;
+        color: black;
+
+    }       
+
+    .header-hamb-nav {
+        background-color: $color-primario;
+        color: black;        
+
+        .header-list {
+            .list-item {
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        color: blue;
+                    }
+
+                    &:a:active {
+                        color: blueviolet;
+                    }
+    
+                }
+            }
+        }        
+
     }
 
-    .header-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    // .header {
+    //     display: grid;
+    //     grid-template-columns: repeat(2, 1fr);
+    //     grid-template-rows: 10vh 5vh;
+    // }
 
-    .header-form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    // .header-title {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+    // .header-form {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
 
 }
 
@@ -157,4 +245,16 @@ h1 {
         display: flex;
         gap: 20px;
     }
+
+    .header-form {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }    
+
+    .header-hamb {
+        display: none;
+
+    }
+
 }

@@ -60,6 +60,16 @@
     align-content: center;
   }
   
+  // media queries - Header - Celu
+
+@media (max-width: 767px) {
+  .galeria {
+    padding: 15px;
+    height: 74rem;
+  }
+
+}
+
   /* GRID - GALERIA - TABLET */
   @media (min-width: 768px) {
     .contenedor-galeria {
@@ -79,6 +89,11 @@
       height: 100%;
       object-fit: cover;
     }
+    .galeria {
+      padding: 15px;
+      height: 50rem;
+    }
+  
   
   }
   
@@ -91,4 +106,9 @@
       justify-content: center;
       align-content: center;
     }
+
+    .galeria {
+      padding: 15px;
+      height: 64vh;
+    }    
   }
