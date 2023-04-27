@@ -268,6 +268,7 @@ footer h4 {
 /* ======= GRILLA GALERIA ========= */
 .galeria {
   padding: 15px;
+  height: 64vh;
 }
 
 .galeria-title {
@@ -312,6 +313,76 @@ footer h4 {
     justify-content: center;
     align-content: center;
   }
+}
+.flex-container1 {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  height: flex;
+  justify-content: center;
+  padding: 15px;
+  height: 64vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: flex;
+}
+
+.portada-btn {
+  background-color: #0EABA8;
+  /* rgba(95, 158, 160, 0.493); */
+  padding: 15px;
+  color: black;
+  border: black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  background-color: white;
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  border: 2px solid white;
+  color: black;
+  border-radius: 20px;
+}
+
+.flex-container1 {
+  display: flex;
+  /* flex-flow: row wrap;   */
+  flex-direction: column;
+  height: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  /* flex-flow: row wrap;  
+      height: flex; 
+      justify-content: space-around; */
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flex-container1 {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  height: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  /* flex-flow: row wrap;  
+      height: flex; 
+      justify-content: space-around; */
+  flex-direction: column;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

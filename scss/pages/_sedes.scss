@@ -1,0 +1,40 @@
+.flex-container1 {
+    display: flex;
+    flex-flow: row wrap; 
+    flex-direction: column;
+    height: flex;
+    justify-content: center;
+    padding: 15px;
+    height: 64vh;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // flex-flow: row wrap;  
+    height: flex;
+    // justify-content: space-around; 
+}
+
+.portada-btn {
+    background-color: $color-primario;
+    /* rgba(95, 158, 160, 0.493); */
+    padding: 15px;
+    color: black;
+    border: black;
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-start;
+    gap: 10px;
+
+}
+
+.btn {
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    border: 2px solid white;
+    color: black;
+    border-radius: 20px;
+}

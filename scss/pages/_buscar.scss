@@ -1,0 +1,17 @@
+.flex-container1 {
+    display: flex;
+    flex-flow: row wrap;   
+    flex-direction: column;
+    height: flex;
+    justify-content: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    /* flex-flow: row wrap;  
+        height: flex; 
+        justify-content: space-around; */
+  
+    flex-direction: column;
+    gap: 20px;
+  }
