@@ -10,10 +10,11 @@
 
 .flex-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    // flex-direction:column;
     gap: 20px;
+    // height: flex;
     // flex-flow: row wrap;  
-    height: flex;
     // justify-content: space-around; 
 }
 
@@ -23,10 +24,11 @@
     padding: 15px;
     color: black;
     border: black;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    // flex-direction: row;
     // align-items: flex-start;
-    gap: 10px;
+    // gap: 10px;
 
 }
 

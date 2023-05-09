@@ -93,13 +93,35 @@
                     &:a:active {
                         color: blueviolet;
                     }
-    
+
                 }
             }
         }
     }
 
+    .header-form {
+        .btn-header {
+            background-color: rgb(183, 174, 174);
+            font-size: 1.0rem;
+            padding: 0.4em 0.7em;
+            border: 0.5px solid white;
+            color: black;
+            border-radius: 20px;
+        }
+
+        .search-header {
+            background-color: white;
+            font-size: 1.0rem;
+            padding: 0.4em 0.7em;
+            border: 0.5px solid white;
+            color: black;
+            border-radius: 20px;
+        }
+    }
+
 }
+
+
 
 // .header-title h1 {
 //     text-align: center;
@@ -114,29 +136,31 @@
 @media (max-width: 767px) {
     .header {
         display: none;
- 
+
         // display: flex;
         // flex-direction: column-reverse;
     }
-        
+
     .header-hamb {
         display: block;
         // flex-direction: column-reverse;
         background-color: $color-primario;
         color: black;
-        padding: 20px;                    
-        
+        padding: 20px;
+
     }
+
     .header-hamb-title {
         text-align: center;
         background-color: $color-primario;
         color: black;
 
-    }   
+    }
+
     .header-hamb-nav {
         background-color: $color-primario;
-        color: black;   
-        
+        color: black;
+
         .header-list {
             .list-item {
                 a {
@@ -150,10 +174,10 @@
                     &:a:active {
                         color: blueviolet;
                     }
-    
+
                 }
             }
-        }        
+        }
 
     }
 
@@ -164,29 +188,30 @@
 @media (min-width: 768px) and (max-width: 1999px) {
     .header {
         display: none;
- 
+
         // display: flex;
         // flex-direction: column-reverse;
     }
-        
+
     .header-hamb {
         display: block;
         // flex-direction: column-reverse;
         background-color: $color-primario;
         color: black;
-        padding: 20px;                    
-        
+        padding: 20px;
+
     }
+
     .header-hamb-title {
         text-align: center;
         background-color: $color-primario;
         color: black;
 
-    }       
+    }
 
     .header-hamb-nav {
         background-color: $color-primario;
-        color: black;        
+        color: black;
 
         .header-list {
             .list-item {
@@ -201,10 +226,10 @@
                     &:a:active {
                         color: blueviolet;
                     }
-    
+
                 }
             }
-        }        
+        }
 
     }
 

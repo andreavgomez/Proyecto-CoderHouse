@@ -69,6 +69,22 @@ ol {
 .header .header-nav .header-list .list-item a:a:active {
   color: blueviolet;
 }
+.header .header-form .btn-header {
+  background-color: rgb(183, 174, 174);
+  font-size: 1rem;
+  padding: 0.4em 0.7em;
+  border: 0.5px solid white;
+  color: black;
+  border-radius: 20px;
+}
+.header .header-form .search-header {
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.4em 0.7em;
+  border: 0.5px solid white;
+  color: black;
+  border-radius: 20px;
+}
 
 @media (max-width: 767px) {
   .header {
@@ -369,9 +385,8 @@ footer h4 {
 
 .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
-  height: flex;
 }
 
 .portada-btn {
@@ -380,9 +395,6 @@ footer h4 {
   padding: 15px;
   color: black;
   border: black;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .btn {
@@ -424,7 +436,7 @@ footer h4 {
   /* flex-flow: row wrap;  
       height: flex; 
       justify-content: space-around; */
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
 }
 
