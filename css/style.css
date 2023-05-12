@@ -373,14 +373,14 @@ footer h4 {
     height: 64vh;
   }
 }
-.flex-container1 {
+.flex-container-sede {
   display: flex;
   flex-flow: row wrap;
   flex-direction: column;
   height: flex;
   justify-content: center;
   padding: 15px;
-  height: 64vh;
+  height: 22vh;
 }
 
 .flex-container {
@@ -406,38 +406,63 @@ footer h4 {
   border-radius: 20px;
 }
 
-.flex-container1 {
-  display: flex;
-  /* flex-flow: row wrap;   */
-  flex-direction: column;
-  height: flex;
-  justify-content: center;
+.card-img-sede {
+  width: 400PX;
+  height: 300px;
 }
 
-.flex-container {
-  display: flex;
-  /* flex-flow: row wrap;  
-      height: flex; 
-      justify-content: space-around; */
-  flex-direction: column;
-  gap: 20px;
+@media (max-width: 767px) {
+  .flex-container-sede {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: start;
+    padding: 15px;
+    height: 68rem;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+  .flex-container-dir {
+    padding: 15px;
+  }
 }
-
-.flex-container1 {
-  display: flex;
-  flex-flow: row wrap;
-  flex-direction: column;
-  height: flex;
-  justify-content: center;
+/* GRID - GALERIA - TABLET */
+@media (min-width: 768px) {
+  .flex-container-sede {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: start;
+    padding: 15px;
+    height: 60rem;
+  }
+  .flex-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    padding: 15px;
+  }
+  .flex-container-dir {
+    padding: 15px;
+  }
 }
-
-.flex-container {
-  display: flex;
-  /* flex-flow: row wrap;  
-      height: flex; 
-      justify-content: space-around; */
-  flex-direction: row;
-  gap: 20px;
+@media (min-width: 1200px) {
+  .flex-container-sede {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: start;
+    padding: 15px;
+    height: 58rem;
+  }
+  .flex-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

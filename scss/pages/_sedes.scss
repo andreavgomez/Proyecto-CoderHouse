@@ -1,17 +1,17 @@
-.flex-container1 {
+.flex-container-sede {
     display: flex;
-    flex-flow: row wrap; 
+    flex-flow: row wrap;
     flex-direction: column;
     height: flex;
     justify-content: center;
     padding: 15px;
-    height: 64vh;
+    height: 22vh;
 }
 
 .flex-container {
     display: flex;
     flex-direction: row;
-    // flex-direction:column;
+    //flex-direction:column;
     gap: 20px;
     // height: flex;
     // flex-flow: row wrap;  
@@ -39,4 +39,104 @@
     border: 2px solid white;
     color: black;
     border-radius: 20px;
+}
+
+.card-img-sede {
+    width: 400PX;
+    height: 300px;
+}
+
+
+// media queries - Header - Celu
+
+@media (max-width: 767px) {
+    .flex-container-sede {
+        display: grid;
+        //grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: start;
+        // gap: 20px;
+        // padding: 20px;
+        // justify-items: center;
+        // align-items: center;
+        // justify-content: center;
+        // align-content: center;
+        padding: 15px;
+        height: 68rem;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .flex-container-dir {
+        padding: 15px;
+    }
+
+    // .flex-container {
+    //     display: grid;
+    //     grid-template-columns: repeat(1, 1fr);
+    //     grid-template-rows: repeat(4, 40vh);
+    //     gap: 20px;
+    //     padding: 20px;
+    //     justify-items: center;
+    //     align-items: center;
+    //     justify-content: center;
+    //     align-content: center;
+    //   }    
+
+}
+
+/* GRID - GALERIA - TABLET */
+@media (min-width: 768px) {
+
+    .flex-container-sede {
+        display: grid;
+        //grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: start;
+        padding: 15px;
+        height: 60rem;
+    }
+
+    .flex-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: repeat(3 10vh);
+        gap: 20px;
+        padding: 20px;
+        padding: 15px;
+    }
+
+    .flex-container-dir {
+        padding: 15px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .flex-container-sede {
+        display: grid;
+        //grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: start;
+        padding: 15px;
+        height: 58rem;        
+    }
+
+    .flex-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        // grid-template-rows: repeat(3 10vh);
+        gap: 20px;
+        padding: 20px;
+        // justify-items: start;
+        // align-items: center;
+        // justify-content: center;
+        // align-content: center;
+    }
+
 }
