@@ -272,8 +272,8 @@ footer h4 {
 
 /* ======= GRILLA SERVICIOS ========= */
 .card {
-  width: 160px;
-  height: 160px;
+  width: 190px;
+  height: 190px;
   /* border: solid 3px black; */
   font-size: 1.8rem;
   text-align: center;
@@ -306,14 +306,14 @@ footer h4 {
 }
 
 .card-img {
-  width: 100PX;
-  height: 100px;
+  width: 30em;
+  height: 30em;
 }
 
 /* ======= GRILLA GALERIA ========= */
 .galeria {
   padding: 15px;
-  height: 64vh;
+  height: 74vh;
 }
 
 .galeria-title {
@@ -333,7 +333,11 @@ footer h4 {
 @media (max-width: 767px) {
   .galeria {
     padding: 15px;
-    height: 74rem;
+    height: 84rem;
+  }
+  .card-img {
+    width: 100px;
+    height: 100px;
   }
 }
 /* GRID - GALERIA - TABLET */
@@ -417,7 +421,7 @@ footer h4 {
     grid-template-rows: repeat(3, 1fr);
     justify-content: start;
     padding: 15px;
-    height: 68rem;
+    height: 85rem;
   }
   .flex-container {
     display: flex;
@@ -436,7 +440,7 @@ footer h4 {
     grid-template-rows: repeat(3, 1fr);
     justify-content: start;
     padding: 15px;
-    height: 60rem;
+    height: 80rem;
   }
   .flex-container {
     display: grid;
@@ -455,13 +459,231 @@ footer h4 {
     grid-template-rows: repeat(3, 1fr);
     justify-content: start;
     padding: 15px;
-    height: 58rem;
+    height: 80rem;
   }
   .flex-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
+  }
+}
+.flex-container1-bus {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  height: 60vh;
+}
+
+.flex-container-bus {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  padding: 15px;
+  height: 10vh;
+}
+
+.flex-container-tema {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  height: 10vh;
+}
+
+.flex-container-tema-pie {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  height: 10vh;
+}
+
+.flex-container-medico {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  height: 20vh;
+}
+
+.flex-container-medico-det {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  height: 20vh;
+}
+
+.flex-container-medico-pie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  height: 20vh;
+}
+
+.search-bus {
+  background-color: rgb(232, 227, 227);
+  font-size: 1rem;
+  padding: 0.3em 6em;
+  border: 0.5px solid black;
+  color: black;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.btn-bus {
+  background-color: rgb(232, 227, 227);
+  font-size: 1rem;
+  padding: 0.4em 0.7em;
+  border: 0.5px solid white;
+  color: black;
+  border-radius: 20px;
+}
+
+.btn-sel {
+  background-color: rgb(137, 199, 254);
+}
+
+.barra-titulo {
+  background-color: rgb(136, 133, 133);
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  height: flex;
+  justify-content: center;
+  padding: 15px;
+  height: 5vh;
+}
+
+@media (max-width: 767px) {
+  .flex-container1-bus {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: start;
+    padding: 15px;
+    height: 50rem;
+  }
+  .flex-container-bus {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    padding: 15px;
+    height: 8rem;
+  }
+  .flex-container-bus .search-bus {
+    background-color: rgb(232, 227, 227);
+    font-size: 1rem;
+    padding: 0.2em 2em;
+    border: 0.5px solid black;
+    color: black;
+    border-radius: 20px;
+    gap: 10px;
+    height: 40px;
+  }
+  .flex-container-bus .btn-bus {
+    background-color: rgb(232, 227, 227);
+    font-size: 1rem;
+    padding: 0.4em 0.7em;
+    border: 0.5px solid white;
+    color: black;
+    border-radius: 20px;
+    width: 20vh;
+    height: 40px;
+  }
+  .flex-container-tema {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 15px;
+    height: 14rem;
+  }
+  .flex-container-tema-pie {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 15px;
+    height: 11rem;
+  }
+  .flex-container-medico {
+    padding: 15px;
+    height: 7rem;
+  }
+  .flex-container-medico-det {
+    padding: 15px;
+    height: 8rem;
+  }
+}
+/* GRID - GALERIA - TABLET */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .flex-container1-bus {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: start;
+    padding: 15px;
+    height: 40rem;
+  }
+  .flex-container-bus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 15px;
+    padding: 8px;
+  }
+  .flex-container-bus .search-bus {
+    background-color: rgb(232, 227, 227);
+    font-size: 1rem;
+    padding: 0.2em 2em;
+    border: 0.5px solid black;
+    color: black;
+    border-radius: 20px;
+    gap: 10px;
+    height: 40px;
+    width: 90vh;
+  }
+  .flex-container-bus .btn-bus {
+    background-color: rgb(232, 227, 227);
+    font-size: 1rem;
+    padding: 0.4em 0.7em;
+    border: 0.5px solid white;
+    color: black;
+    border-radius: 20px;
+    width: 15vh;
+    height: 40px;
+    gap: 10px;
+  }
+  .flex-container-tema {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 15px;
+    height: 10rem;
+  }
+  .flex-container-tema-pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 15px;
+    height: 4rem;
+  }
+  .flex-container-medico {
+    padding: 15px;
+    height: 12rem;
+  }
+  .flex-container-medico-det {
+    padding: 15px;
+    height: 8rem;
   }
 }
 

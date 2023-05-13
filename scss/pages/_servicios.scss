@@ -1,7 +1,7 @@
 /* ======= GRILLA SERVICIOS ========= */
 .card {
-    width: 160px;
-    height: 160px;
+    width: 190px;
+    height: 190px;
     /* border: solid 3px black; */
     font-size: 1.8rem;
     text-align: center;
@@ -34,16 +34,21 @@
     gap: 20px;
   }
   
+  // .card-img {
+  //   width: 100PX;
+  //   height: 100px;
+  // }
+
   .card-img {
-    width: 100PX;
-    height: 100px;
+    width: 30em;
+    height: 30em;
   }
   
   /* ======= GRILLA GALERIA ========= */
   
   .galeria {
     padding: 15px;
-    height: 64vh;
+    height: 74vh;
   }
   
   .galeria-title {
@@ -65,7 +70,12 @@
 @media (max-width: 767px) {
   .galeria {
     padding: 15px;
-    height: 74rem;
+    height: 84rem;
+  }
+
+  .card-img {
+    width: 100px;
+    height: 100px;
   }
 
 }
