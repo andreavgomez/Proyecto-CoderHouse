@@ -1,17 +1,15 @@
-// .flex-container1 {
-//     display: flex;
-//     /* flex-flow: row wrap;   */
-//     flex-direction: column;
-//     height: flex;
-//     justify-content: center;
-//   }
+.flex-container1-res {
+    display: flex;
+    /* flex-flow: row wrap;   */
+    flex-direction: column;
+    height: flex;
+    justify-content: center;
+    padding: 15px;
+  }
   
-//   .flex-container {
-//     display: flex;
-//     /* flex-flow: row wrap;  
-//         height: flex; 
-//         justify-content: space-around; */
-  
-//     flex-direction: column;
-//     gap: 20px;
-//   }
+  .flex-container-res {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
