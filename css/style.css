@@ -184,6 +184,10 @@ footer {
   text-align: center;
 }
 
+.footer-redes {
+  justify-content: center;
+}
+
 .footer-redes-items {
   font-size: 1rem;
   padding: 1em;
