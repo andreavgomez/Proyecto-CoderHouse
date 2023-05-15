@@ -18,7 +18,15 @@
 
     <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <!-- <meta name="description" content="Reserva tu turno online de la forma mas sencilla"> -->
-
+    <!--  -->
+    <link href="bootstrap/css/datepicker/bootstrap-datepicker3.css" rel="stylesheet">
+    <script src="bootstrap/js/datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="bootstrap/js/datepicker/bootstrap-datepicker.es.min.js"></script>
+    <script src="bootstrap/js/selectpicker/bootstrap-select.min.js"></script>
+    <link href="bootstrap/css/selectpicker/bootstrap-select.min.css" rel="stylesheet">
+    <script src="bootstrap/js/modal/bootstrap-dialog.js"></script>
+    <link href="bootstrap/css/modal/bootstrap-dialog.css" rel="stylesheet">
+    <!--  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -98,8 +106,8 @@
     </header>
     <main>
         <section class="flex-container1-res">
-            <h2>Turnos Online</h2>
             <section class="flex-container-res">
+                <h2>Turnos Online</h2>
                 <div>
                     <div class="row">
                         <label>Cobertura</label>
@@ -148,6 +156,11 @@
                         <div>
                             <select id="cod_espe" name="cod_espe">
                                 <option value="">Seleccionar</option>
+                                <option value="Traumatología">Traumatología</option>
+                                <option value="Diagnostico">Diagnóstico</option>
+                                <option value="Nutricion">Nutrición</option>
+                                <option value="Kinesiologia">Kinesiología</option>
+                                <option value="Cardiología">Cardiología</option>
                             </select>
                         </div>
                     </div>
@@ -168,205 +181,114 @@
                             <span id="horario"></span>
                         </div>
                     </div>
-                </div><!-- fin 10 -->
-
+                </div>
+            </section>
+            <section class="flex-container-datepicker">
                 <div>
                     <div>
                         <div class="row">
-                            <div id="datepicker">Aca irá un calendario</div>
+                            <!-- <div id="datepicker">Aca irá un calendario</div> -->
+                            <!--  -->
+                            <div id="datepicker">
+                                <div class="datepicker datepicker-inline">
+                                    <div class="datepicker-days">
+                                        <table class="columnas-calendario">
+                                            <thead>
+                                                <tr>
+                                                    <th class="prev">«</th>
+                                                    <th colspan="5" class="datepicker-switch">Marzo 2023</th>
+                                                    <th class="next">»</th>
+                                                </tr>
+                                                <tr class="columnas-calendario">
+                                                    <th class="dow">Lu</th>
+                                                    <th class="dow">Ma</th>
+                                                    <th class="dow">Mi</th>
+                                                    <th class="dow">Ju</th>
+                                                    <th class="dow">Vi</th>
+                                                    <th class="dow">Sa</th>
+                                                    <th class="dow">Do</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="columnas-calendario">
+                                                    <td class="old day">27</td>
+                                                    <td class="old day">28</td>
+                                                    <td class="day">1</td>
+                                                    <td class="day">2</td>
+                                                    <td class="day">3</td>
+                                                    <td class="day">4</td>
+                                                    <td class="day">5</td>
+                                                </tr>
+                                                <tr class="columnas-calendario">
+                                                    <td class="day">6</td>
+                                                    <td class="day">7</td>
+                                                    <td class="day">8</td>
+                                                    <td class="day">9</td>
+                                                    <td class="day">10</td>
+                                                    <td class="day">11</td>
+                                                    <td class="day">12</td>
+                                                </tr>
+                                                <tr class="columnas-calendario">
+                                                    <td class="day">13</td>
+                                                    <td class="day">14</td>
+                                                    <td class="day">15</td>
+                                                    <td class="day">16</td>
+                                                    <td class="day">17</td>
+                                                    <td class="day">18</td>
+                                                    <td class="day">19</td>
+                                                </tr>
+                                                <tr class="columnas-calendario">
+                                                    <td class="day">20</td>
+                                                    <td class="day">21</td>
+                                                    <td class="day">22</td>
+                                                    <td class="day">23</td>
+                                                    <td class="day">24</td>
+                                                    <td class="day">25</td>
+                                                    <td class="day">26</td>
+                                                </tr>
+                                                <tr class="columnas-calendario">
+                                                    <td class="day">27</td>
+                                                    <td class="day">28</td>
+                                                    <td class="day">29</td>
+                                                    <td class="day">30</td>
+                                                    <td class="active day">31</td>
+                                                    <td class="new day">1</td>
+                                                    <td class="new day">2</td>
+                                                </tr>
+                                                <tr class="columnas-calendario">
+                                                    <td class="new day">3</td>
+                                                    <td class="new day">4</td>
+                                                    <td class="new day">5</td>
+                                                    <td class="new day">6</td>
+                                                    <td class="new day">7</td>
+                                                    <td class="new day">8</td>
+                                                    <td class="new today day">9</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th colspan="7" class="clear">Borrar</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
                             <input type="hidden" id="my_hidden_input">
                         </div>
                     </div>
-                    <div>
-                        <div class="row">
-                            <h3>ATENCIÓN: Por favor le pedimos que asista puntual.</h3>
-                        </div>
+                </div>
+            </section>
+            <section class="flex-container-nota">
+                <div>
+                    <div class="row">
+                        <h4>ATENCIÓN:</h4>
+                        <h5>Por favor le pedimos que asista puntual.</h5>
                     </div>
-                    <div>
-                        <div class="row">
-                            <div id="obser_profe" class="form-group"
-                                style="font-size: 24px;font-family: Helvetica, Arial, sans-serif; font-weight: 500;line-height: 1.2; color: red !important;">
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- fin 12 -->
-                <!-- </div> -->
-                <!-- </form> -->
+                </div>
             </section>
         </section>
-        <!--  -->
-        <!-- <section>
-            <input id="datepicker" width="276" />
-            <script>
-                $('#datepicker').datepicker({
-                    uiLibrary: 'bootstrap5'
-                });
-            </script> -->
-
-        <!-- <div id="datepicker">
-            <div class="datepicker datepicker-inline">
-                <div class="datepicker-days" style="display: block;">
-                    <table class=" table-condensed">
-                        <thead>
-                            <tr>
-                                <th class="prev" style="visibility: visible;">«</th>
-                                <th colspan="5" class="datepicker-switch">Marzo 2023</th>
-                                <th class="next" style="visibility: visible;">»</th>
-                            </tr>
-                            <tr>
-                                <th class="dow">Lu</th>
-                                <th class="dow">Ma</th>
-                                <th class="dow">Mi</th>
-                                <th class="dow">Ju</th>
-                                <th class="dow">Vi</th>
-                                <th class="dow">Sa</th>
-                                <th class="dow">Do</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="old day">27</td>
-                                <td class="old day">28</td>
-                                <td class="day">1</td>
-                                <td class="day">2</td>
-                                <td class="day">3</td>
-                                <td class="day">4</td>
-                                <td class="day">5</td>
-                            </tr>
-                            <tr>
-                                <td class="day">6</td>
-                                <td class="day">7</td>
-                                <td class="day">8</td>
-                                <td class="day">9</td>
-                                <td class="day">10</td>
-                                <td class="day">11</td>
-                                <td class="day">12</td>
-                            </tr>
-                            <tr>
-                                <td class="day">13</td>
-                                <td class="day">14</td>
-                                <td class="day">15</td>
-                                <td class="day">16</td>
-                                <td class="day">17</td>
-                                <td class="day">18</td>
-                                <td class="day">19</td>
-                            </tr>
-                            <tr>
-                                <td class="day">20</td>
-                                <td class="day">21</td>
-                                <td class="day">22</td>
-                                <td class="day">23</td>
-                                <td class="day">24</td>
-                                <td class="day">25</td>
-                                <td class="day">26</td>
-                            </tr>
-                            <tr>
-                                <td class="day">27</td>
-                                <td class="day">28</td>
-                                <td class="day">29</td>
-                                <td class="day">30</td>
-                                <td class="active day">31</td>
-                                <td class="new day">1</td>
-                                <td class="new day">2</td>
-                            </tr>
-                            <tr>
-                                <td class="new day">3</td>
-                                <td class="new day">4</td>
-                                <td class="new day">5</td>
-                                <td class="new day">6</td>
-                                <td class="new day">7</td>
-                                <td class="new day">8</td>
-                                <td class="new today day">9</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th colspan="7" class="today" style="display: none;">Hoy</th>
-                            </tr>
-                            <tr>
-                                <th colspan="7" class="clear">Borrar</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-                <div class="datepicker-months" style="display: none;">
-                    <table class="table-condensed">
-                        <thead>
-                            <tr>
-                                <th class="prev" style="visibility: visible;">«</th>
-                                <th colspan="5" class="datepicker-switch">2023</th>
-                                <th class="next" style="visibility: visible;">»</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td colspan="7"><span class="month">Ene</span><span class="month">Feb</span><span
-                                        class="month active">Mar</span><span class="month">Abr</span><span
-                                        class="month">May</span><span class="month">Jun</span><span
-                                        class="month">Jul</span><span class="month">Ago</span><span
-                                        class="month">Sep</span><span class="month">Oct</span><span
-                                        class="month">Nov</span><span class="month">Dic</span></td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th colspan="7" class="today" style="display: none;">Hoy</th>
-                            </tr>
-                            <tr>
-                                <th colspan="7" class="clear">Borrar</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-                <div class="datepicker-years" style="display: none;">
-                    <table class="table-condensed">
-                        <thead>
-                            <tr>
-                                <th class="prev" style="visibility: visible;">«</th>
-                                <th colspan="5" class="datepicker-switch">2020-2029</th>
-                                <th class="next" style="visibility: visible;">»</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td colspan="7"><span class="year old">2019</span><span class="year">2020</span><span
-                                        class="year">2021</span><span class="year">2022</span><span
-                                        class="year active">2023</span><span class="year">2024</span><span
-                                        class="year">2025</span><span class="year">2026</span><span
-                                        class="year">2027</span><span class="year">2028</span><span
-                                        class="year">2029</span><span class="year new">2030</span></td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th colspan="7" class="today" style="display: none;">Hoy</th>
-                            </tr>
-                            <tr>
-                                <th colspan="7" class="clear">Borrar</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </div>
-        </div> -->
-        </section>
-        <div style="overflow:hidden;">
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div id="datetimepicker12"></div>
-                    </div>
-                </div>
-            </div>
-            <script type="text/javascript">
-                $(function () {
-                    $('#datetimepicker12').datetimepicker({
-                        inline: true,
-                        sideBySide: true
-                    });
-                });
-            </script>
-        </div>
         <!--  -->
     </main>
     <footer>
