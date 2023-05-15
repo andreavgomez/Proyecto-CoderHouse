@@ -1,7 +1,7 @@
 .flex-container1-res {
     display: flex;
     /* flex-flow: row wrap;   */
-    flex-direction: column;
+    flex-direction: row;
     height: flex;
     justify-content: center;
     padding: 15px;
@@ -10,6 +10,61 @@
   .flex-container-res {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
     padding: 15px;
+    background-color: darkgray;
+    // border: black;
   }
+
+  .flex-container-datepicker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    background-color: darkgray;
+    // border: black;
+    // height: 60vh;
+  }
+
+  .flex-container-nota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: darkgray;
+    // border: black;
+    // height: 60vh;
+  }
+
+  .columnas-calendario {
+    padding: 20em;
+    gap: 20px;
+  }
+
+
+  // media queries - Header - Celu
+
+@media (max-width: 767px) {
+  .flex-container1-res {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: start;
+      padding: 15px;
+      // height: 85rem;
+  }
+}
+
+/* GRID - GALERIA - TABLET */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .flex-container1-res {
+      display: grid;
+      //grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: start;
+      padding: 15px;
+      // height: 80rem;
+  }
+}
